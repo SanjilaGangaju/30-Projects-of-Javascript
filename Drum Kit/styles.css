@@ -43,7 +43,7 @@ body{
     }
     
 }
-.key:hover{
+.playing{
     border: 2px solid rgb(221, 115, 132);
     box-shadow: 0 0 10px pink;
     scale: 1.1;
