@@ -9,15 +9,17 @@ function playSound(event){
     key.classList.add('playing');
 
 
-    const keys = document.querySelectorAll('.key');
+  
+    
+}
+const keys = document.querySelectorAll('.key');
     keys.forEach((keyitem)=>{
         keyitem.addEventListener('transitionend', removeTransition);
 
     })
-    
-}
 function removeTransition(event){
-    if(event.propertyName !== 'scale') return;
+
+    if(event.type !== 'transitionend') return;
     this.classList.remove('playing');
     }
 
